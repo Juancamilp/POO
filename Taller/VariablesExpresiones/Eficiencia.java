@@ -1,4 +1,4 @@
-package taller;
+package VariablesExpresiones;
 
 public class Eficiencia {
 
@@ -23,7 +23,7 @@ public class Eficiencia {
         double sigma = Math.sqrt(
                 ((v1 - vmedia) * (v1 - vmedia) + (v2 - vmedia) * (v2 - vmedia) + (v3 - vmedia) * (v3 - vmedia)) / 3.0);
 
-        double w1 = 0.25, w2 = 0.25, w3 = 0.25, w4 = 0.25;  
+        double w1 = 0.25, w2 = 0.25, w3 = 0.25, w4 = 0.25;      
         double score = w1 * (1 / costoPorKm) + w2 * kmltotal + w3 * (1 / COporKm) + w4 * (1 / (1 + sigma));
 
         System.out.printf("Score=%.4f%n", score);

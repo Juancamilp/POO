@@ -1,4 +1,4 @@
-package taller;
+package VariablesExpresiones;
 
 public class CostosDirectos {
     public static void main(String[] args) {
