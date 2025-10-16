@@ -1,36 +1,30 @@
 package Momentoevaluativo;
 /*
-    Universidad Cooperativa de Colombia – Campus Cali
-    Ingeniería de Sistemas
-    Examen Parcial – Programación Orientada a Objetos
-
-    Autor: Juan [Tu Apellido]
-    Docente: Ing. Jhon Haide Cano Beltrán
-
-    ===========================================================
+   
+    
     PARTE I – CONCEPTUAL (10%)
-    ===========================================================
+    
     1. ¿Qué es la encapsulación y por qué es importante?
-       → La encapsulación es el principio de ocultar los datos internos de una clase
-         y permitir el acceso solo mediante métodos públicos (getters y setters).
-         Es importante porque protege la información y evita modificaciones indebidas.
+    La encapsulación es el principio de ocultar los datos internos de una clase
+    y permitir el acceso solo mediante métodos públicos (getters y setters).
+     Es importante porque protege la información y evita modificaciones indebidas.
 
     2. ¿Qué diferencia hay entre un método y un constructor?
-       → Un constructor se ejecuta automáticamente al crear un objeto
-         y sirve para inicializar atributos.
-         Un método, en cambio, define un comportamiento y se ejecuta manualmente.
+    Un constructor se ejecuta automáticamente al crear un objeto
+     y sirve para inicializar atributos.
+     Un método, en cambio, define un comportamiento y se ejecuta manualmente.
 
     3. ¿Por qué los atributos deben ser privados y no públicos?
-       → Para mantener la integridad de los datos y evitar que otras clases
-         los modifiquen directamente sin validaciones.
+    Para mantener la integridad de los datos y evitar que otras clases
+    los modifiquen directamente sin validaciones.
 
     4. ¿Qué función cumplen los getters y setters?
-       → Permiten leer (get) o modificar (set) los atributos privados
-         aplicando validaciones o controles.
+    Permiten leer (get) o modificar (set) los atributos privados
+    aplicando validaciones o controles.
 
     5. Verdadero o falso: “Un método setter no debe validar los datos que recibe.”
-       → FALSO. Un setter siempre debe validar los datos antes de asignarlos
-         para evitar valores erróneos o inconsistentes.
+    FALSO. Un setter siempre debe validar los datos antes de asignarlos
+    para evitar valores erróneos o inconsistentes.
 */
 
 class CuentaBancaria {
@@ -83,11 +77,11 @@ class CuentaBancaria {
     /*
         Preguntas de sustentación:
         1. ¿Por qué el atributo saldo debe ser privado?
-           → Para evitar que se cambie directamente sin control ni validación.
+            Para evitar que se cambie directamente sin control ni validación.
         2. ¿Qué ocurriría si se intenta depositar un valor negativo?
-           → No se realiza el depósito y se muestra un mensaje de error.
+            No se realiza el depósito y se muestra un mensaje de error.
         3. Modificar para permitir un sobregiro máximo de -50:
-           → Ya está implementado en el método retirar (saldo - monto >= -50).
+            Ya está implementado en el método retirar (saldo - monto >= -50).
     */
 }
 
@@ -160,11 +154,11 @@ class Producto {
     /*
         Preguntas de sustentación:
         1. ¿Por qué se valida el porcentaje del descuento?
-           → Para evitar descuentos fuera del rango permitido (0–50%).
+            Para evitar descuentos fuera del rango permitido (0–50%).
         2. ¿Qué sucede si el precio unitario es negativo?
-           → Se asigna 0 para mantener consistencia y evitar errores de cálculo.
+            Se asigna 0 para mantener consistencia y evitar errores de cálculo.
         3. Impuesto del 8%:
-           → Se suma al total final así:
+            Se suma al total final así:
               totalConImpuesto = aplicarDescuento(porcentaje) * 1.08;
     */
 }
